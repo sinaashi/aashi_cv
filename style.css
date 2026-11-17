@@ -58,33 +58,36 @@ html, body, .main-container {
 }
 
 .main-container {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 /* Hero Section & Centered Portrait Frame */
 .hero-section {
     text-align: center;
-    padding: 40px 0 30px 0;
+    padding: 20px 0 50px 0;
     border-bottom: 1px solid rgba(230, 194, 122, 0.3);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
+/* Centered Portrait Frame */
 .portrait-frame {
-    width: 160px;
-    height: 160px;
-    margin: 0 auto 20px auto;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 30px auto;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #E6C27A;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    border: 3px double #E6C27A;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    background-color: #722B30;
 }
 
 .portrait-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 /* Headings: Antique Gold */
@@ -95,40 +98,41 @@ h1, h2, h3, h4, .main-title, .resume-section h2 {
 }
 
 .main-title {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     letter-spacing: 2px;
 }
 
 .subtitle-roles {
     color: #F0D38E !important;
-    font-size: 1.1rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 25px;
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
 .custom-greeting-box {
-    background: rgba(114, 43, 48, 0.6);
-    border: 1px solid rgba(230, 194, 122, 0.3);
-    padding: 25px;
+    background: #722B30;
+    border: 1px solid rgba(230, 194, 122, 0.4);
+    padding: 30px;
     border-radius: 6px;
-    max-width: 700px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .greeting-speech {
     font-family: 'Pinyon Script', cursive;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #E6C27A !important;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 /* Body Text: Off-White / Soft Cream */
 p, li, span, a, .section-intro, .exp-details, .intro-story {
     color: #F7EFE5 !important;
     font-size: 1.15rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 /* Table of Contents Navigation */
@@ -137,8 +141,9 @@ p, li, span, a, .section-intro, .exp-details, .intro-story {
     border: 1px solid rgba(230, 194, 122, 0.4);
     padding: 20px;
     border-radius: 6px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
 .toc-list {
@@ -148,26 +153,25 @@ p, li, span, a, .section-intro, .exp-details, .intro-story {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .toc-list a {
     color: #E6C27A !important;
     text-decoration: none;
     font-family: 'Cinzel Decorative', serif;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
     transition: color 0.2s;
 }
 
 .toc-list a:hover {
     color: #F7EFE5 !important;
-    text-decoration: underline;
 }
 
 /* Content Sections & Compartments */
 .resume-section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .section-intro {
@@ -180,14 +184,14 @@ p, li, span, a, .section-intro, .exp-details, .intro-story {
 .experience-card, .competency-box, .language-box, .connect-box, .art-placeholder, .timeline-item {
     background-color: #722B30 !important;
     border: 1px solid rgba(230, 194, 122, 0.45) !important;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
     border-radius: 6px;
-    padding: 30px;
+    padding: 35px;
     margin-bottom: 25px;
 }
 
 .timeline-item h3 {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-size: 1.3rem;
 }
 
@@ -195,19 +199,20 @@ p, li, span, a, .section-intro, .exp-details, .intro-story {
     display: inline-block;
     background: #E6C27A;
     color: #5E2125 !important;
-    padding: 2px 10px;
-    border-radius: 4px;
+    padding: 3px 12px;
+    border-radius: 3px;
     font-weight: bold;
-    font-size: 0.85rem;
-    margin-bottom: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
     font-family: sans-serif;
+    letter-spacing: 1px;
 }
 
 /* Skills Grid */
 .skills-languages-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    gap: 30px;
 }
 
 @media (max-width: 768px) {
@@ -222,7 +227,7 @@ p, li, span, a, .section-intro, .exp-details, .intro-story {
 }
 
 .styled-list li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 /* Action Buttons */
@@ -236,11 +241,11 @@ p, li, span, a, .section-intro, .exp-details, .intro-story {
     border: 1px solid #D4AF37 !important;
     font-family: 'Cinzel Decorative', serif !important;
     font-weight: 700;
-    padding: 12px 30px;
+    padding: 14px 35px;
     display: inline-block;
     text-decoration: none;
     border-radius: 4px;
-    margin-top: 15px;
+    margin-top: 20px;
     transition: all 0.3s ease;
 }
 
@@ -251,9 +256,9 @@ p, li, span, a, .section-intro, .exp-details, .intro-story {
 /* Footer */
 .site-footer {
     text-align: center;
-    padding: 30px 0;
+    padding: 40px 0;
     border-top: 1px solid rgba(230, 194, 122, 0.3);
-    margin-top: 50px;
+    margin-top: 60px;
     color: #E6C27A !important;
     font-family: 'Cinzel Decorative', serif;
     letter-spacing: 2px;
