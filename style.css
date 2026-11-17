@@ -1,256 +1,105 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aashi Sinha — Portfolio</title>
-    <!-- Google Fonts for Victorian/French Elegance & Cursive Script -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Custom French Vintage Autumn Color Injection -->
-    <style>
-        /* Intro / Invitation Screen: French Vintage Autumn Muted Olive/Bronze/Ochre */
-        .intro-overlay {
-            background-color: #3F3224 !important; /* Deep vintage autumn ochre-bronze */
-            background-image: radial-gradient(circle, #4A3B2C 0%, #2D2319 100%) !important;
-            border: 6px double #D4AF37 !important;
-            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.6), 0 10px 30px rgba(0,0,0,0.5) !important;
-        }
+/* 1. Intro Overlay: Rich Vintage Autumn Ochre-Bronze & Gold Frame */
+#intro-overlay.intro-overlay {
+    background-color: #3F3224 !important;
+    background-image: radial-gradient(circle, #524130 0%, #2B2117 100%) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    transition: opacity 0.8s ease;
+}
 
-        .intro-invitation {
-            font-family: 'Pinyon Script', cursive !important;
-            color: #E6C27A !important;
-            font-size: 2.8rem !important;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-        }
+.intro-content {
+    background: #4A3B2C !important;
+    border: 3px double #D4AF37 !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6), inset 0 0 20px rgba(0,0,0,0.3) !important;
+    padding: 50px 70px;
+    text-align: center;
+    border-radius: 4px;
+}
 
-        .reveal-button {
-            background-color: #5C4A32 !important;
-            color: #F7EFE5 !important;
-            border: 1px solid #D4AF37 !important;
-            font-family: 'Cinzel Decorative', serif !important;
-            letter-spacing: 2px;
-            padding: 12px 30px;
-            transition: all 0.3s ease;
-        }
+.intro-invitation {
+    font-family: 'Pinyon Script', cursive !important;
+    color: #E6C27A !important;
+    font-size: 3.2rem !important;
+    margin-bottom: 25px !important;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
 
-        .reveal-button:hover {
-            background-color: #D4AF37 !important;
-            color: #2D2319 !important;
-        }
+.reveal-button {
+    background-color: #5C4A32 !important;
+    color: #F7EFE5 !important;
+    border: 1px solid #D4AF37 !important;
+    font-family: 'Cinzel Decorative', serif !important;
+    letter-spacing: 2px;
+    padding: 14px 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
 
-        /* Main Portfolio Background: Deep Autumn Maroon */
-        body {
-            background-color: #5E2125 !important;
-            color: #F7EFE5 !important;
-            font-family: 'Cormorant Garamond', serif !important;
-        }
+.reveal-button:hover {
+    background-color: #D4AF37 !important;
+    color: #2B2117 !important;
+}
 
-        .main-container {
-            background-color: #5E2125 !important;
-        }
+/* 2. Main Portfolio: Deep Autumn Maroon & Structured Compartments */
+body, .main-container {
+    background-color: #5E2125 !important;
+    color: #F7EFE5 !important;
+    font-family: 'Cormorant Garamond', serif !important;
+}
 
-        /* Section Cards & Compartments */
-        .experience-card, .competency-box, .language-box, .connect-box, .art-placeholder {
-            background-color: #722B30 !important;
-            border: 1px solid rgba(230, 194, 122, 0.4) !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
-        }
+/* Distinct Card Compartments with Gold Borders */
+.experience-card, .competency-box, .language-box, .connect-box, .art-placeholder, .timeline-item {
+    background-color: #722B30 !important;
+    border: 1px solid rgba(230, 194, 122, 0.45) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 4px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
 
-        /* Typography & Headings */
-        h1, h2, h3, h4, .main-title, .resume-section h2 {
-            color: #E6C27A !important;
-            font-family: 'Cinzel Decorative', serif !important;
-        }
+/* Antique Gold Headings */
+h1, h2, h3, h4, .main-title, .resume-section h2 {
+    color: #E6C27A !important;
+    font-family: 'Cinzel Decorative', serif !important;
+}
 
-        p, li, span, a, .section-intro, .exp-details {
-            color: #F7EFE5 !important;
-        }
+/* Off-White Body Text */
+p, li, span, a, .section-intro, .exp-details, .subtitle-roles {
+    color: #F7EFE5 !important;
+}
 
-        .subtitle-roles {
-            color: #EAE0D5 !important;
-        }
+.subtitle-roles {
+    color: #EAE0D5 !important;
+    letter-spacing: 1px;
+}
 
-        .connect-link {
-            background-color: #D4AF37 !important;
-            color: #3D1215 !important;
-            border-color: #D4AF37 !important;
-            font-weight: 600;
-        }
+/* Action Buttons */
+.connect-link {
+    background-color: #D4AF37 !important;
+    color: #3D1215 !important;
+    border: 1px solid #D4AF37 !important;
+    font-family: 'Cinzel Decorative', serif !important;
+    font-weight: 700;
+    padding: 10px 24px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
-        .connect-link:hover {
-            background-color: #F0D38E !important;
-        }
-    </style>
-</head>
-<body>
+.connect-link:hover {
+    background-color: #F0D38E !important;
+}
 
-    <!-- Interactive Intro Screen -->
-    <div id="intro-overlay" class="intro-overlay">
-        <div class="intro-content">
-            <p class="intro-invitation">An Invitation to Explore</p>
-            <button id="reveal-btn" class="reveal-button">Open Portfolio</button>
-        </div>
-    </div>
-
-    <!-- Main Website Container -->
-    <div id="main-container" class="main-container hidden">
-        
-        <!-- Header / Hero Section -->
-        <header class="hero-section">
-            <div class="portrait-frame">
-                <!-- Replace 'your-photo.jpg' with your actual photo filename or URL -->
-                <img src="WhatsApp Image 2026-11-17 at 15.53.11.jpeg" alt="Aashi Sinha Portrait" class="portrait-img">
-            </div>
-            <h1 class="main-title">Aashi Sinha</h1>
-            <p class="subtitle-roles">
-                 &bull; Designer &bull; Entrepreneur &bull; Business Analyst &bull; Digital Marketing
-            </p>
-            
-            <!-- Custom Greeting & Short Intro -->
-            <div class="custom-greeting-box">
-                <p class="greeting-speech">"Hello, come on, grab a chair."</p>
-                <p class="intro-story">
-                    My name is Aashi Sinha, and I spend my days (and most of my nights) overthinking big ideas, building things from scratch and figuring it all out as I go.
-                </p>
-            </div>
-        </header>
-
-        <!-- Navigation Table of Contents -->
-        <nav class="toc-nav">
-            <ul class="toc-list">
-                <li><a href="#education">I. Education</a></li>
-                <li><a href="#work-experience">II. Work Experience</a></li>
-                <li><a href="#art-portfolio">III. Art & Creations</a></li>
-                <li><a href="#skills-languages">IV. Skills & Languages</a></li>
-                <li><a href="#connect">V. Connect</a></li>
-            </ul>
-        </nav>
-
-        <!-- Content Sections -->
-        <main class="content-body">
-            
-            <!-- Section I: About & Education -->
-            <section id="education" class="resume-section">
-                <h2>I. Education</h2>
-                <p class="section-intro">A chronicle of academic pursuits and foundational milestones blending design artistry with strategic business acumen.</p>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="timeline-date">2023</span>
-                        <h3>Chaitram School North Campus, Indore</h3>
-                        <p>Graduated Class 10th</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">2025</span>
-                        <h3>Shanti Asiatic School, Ahmedabad </h3>
-                        <p>Graduated Class 12th</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">2025 – 2026</span>
-                        <h3>ANANT National University</h3>
-                        <p>Completed Foundation Year</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">Present</span>
-                        <h3>IIM Bangalore</h3>
-                        <p>Pursuing BBA in Digital Business & Entrepreneurship</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section II: Work Experience -->
-            <section id="work-experience" class="resume-section">
-                <h2>II. Work Experience</h2>
-                <p class="section-intro">Professional engagements, analytical projects, and operational practices.</p>
-                
-                <div class="experience-card" style="margin-bottom: 20px;">
-                    <h3>AI Data Annotation & Training Specialist (Freelance / Project-Based)</h3>
-                    <p class="exp-details">Handled precision data labeling, multimodal context evaluation, and sentiment categorization for machine learning pipelines. Assessed complex linguistic and visual inputs to optimize model alignment and performance accuracy.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3>Multidisciplinary Practitioner & Venture Builder</h3>
-                    <p class="exp-details">Applied rigorous business analytics and digital marketing strategies to creative ventures in fashion and space design. Bridged the gap between conceptual artistry and structured commercial execution by developing end-to-end prototyping frameworks.</p>
-                </div>
-            </section>
-
-            <!-- Section III: Art -->
-            <section id="art-portfolio" class="resume-section">
-                <h2>III. Art & Creative Explorations</h2>
-                <p class="section-intro">Visual expressions, sketches, and conceptual design studies reflecting a classical French sensibility infused with contemporary perspective.</p>
-                <div class="art-grid">
-                    <div class="art-placeholder">Design Concept Studies</div>
-                    <div class="art-placeholder">Digital Brand</div>
-                </div>
-            </section>
-
-            <!-- Section IV: Skills & Languages -->
-            <section id="skills-languages" class="resume-section">
-                <h2>IV. Skills & Languages</h2>
-                <p class="section-intro">A curated repertoire of creative design disciplines, analytical frameworks, and global communication.</p>
-                
-                <div class="skills-languages-grid">
-                    <!-- Core Competencies -->
-                    <div class="competency-box">
-                        <h3>Disciplines & Capabilities</h3>
-                        <ul class="styled-list">
-                            <li><strong>Design & Aesthetics:</strong> Fashion Illustration, Concept Development, Spatial & Interior Planning, Visual Storytelling</li>
-                            <li><strong>Business & Strategy:</strong> Business Analytics, Digital Entrepreneurship, Market Research, Brand Positioning</li>
-                            <li><strong>AI & Data Operations:</strong> Digital Data Annotation, Prompt Comprehension, Model Training Evaluation, Data Structuring</li>
-                            <li><strong>Digital & Creative Tech:</strong> Digital Marketing Strategy, Content Curation, Web Design Fundamentals (HTML/CSS)</li>
-                        </ul>
-                    </div>
-
-                    <!-- Language Proficiency -->
-                    <div class="language-box">
-                        <h3>Linguistic Proficiency</h3>
-                        <ul class="styled-list">
-                            <li><strong>English:</strong> Fluent</li>
-                            <li><strong>Hindi:</strong> Fluent</li>
-                            <li><strong>Gujarati:</strong> Conversational</li>
-                            <li><strong>Japanese:</strong> Basic Conversational</li>
-                            <li><strong>Spanish:</strong> Elementary (Currently Learning)</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section V: Connect -->
-            <section id="connect" class="resume-section">
-                <h2>V. Connect</h2>
-                <p class="section-intro">Inquiries, collaborations, and professional correspondences are graciously welcomed.</p>
-                <div class="connect-box">
-                    <p>Get in touch via email or professional networks to discuss design and business ventures.</p>
-                    <a href="mailto:worksinaashi@gmail.com" class="connect-link">Send a Message</a>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- Footer -->
-        <footer class="site-footer">
-            <p>&copy; 2026 Aashi Sinha</p>
-        </footer>
-
-    </div>
-
-    <!-- JavaScript to handle the interactive invitation overlay -->
-    <script>
-        const revealBtn = document.getElementById('reveal-btn');
-        const introOverlay = document.getElementById('intro-overlay');
-        const mainContainer = document.getElementById('main-container');
-
-        revealBtn.addEventListener('click', () => {
-            introOverlay.style.opacity = '0';
-            setTimeout(() => {
-                introOverlay.style.display = 'none';
-                mainContainer.classList.remove('hidden');
-                mainContainer.style.opacity = '1';
-            }, 800);
-        });
-    </script>
-</body>
-</html>
+/* Utility to hide/reveal main container */
+.hidden {
+    display: none !important;
+}
