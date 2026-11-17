@@ -2,12 +2,29 @@
    VICTORIAN / FRENCH ELEGANCE PALETTE
    ========================================= */
 :root {
-    --bg-parchment: #C8D1C0;
-    --bg-card: #F2ECE1;
-    --ink-primary: #2C221E;
-    --ink-secondary: #5A4A42;
-    --accent-gold: #B08D57;
-    --accent-burgundy: #5C2A32;
+    <style>
+    :root {
+        --bg-parchment: #4A151B !important;
+        --bg-card: #5C1B23 !important;
+        --ink-primary: #E6C27A !important;
+        --ink-secondary: #D4AF37 !important;
+        --accent-gold: #F0D38E !important;
+        --accent-burgundy: #E6C27A !important;
+        --border-delicate: rgba(212, 175, 55, 0.45) !important;
+    }
+    body {
+        background-color: #4A151B !important;
+        color: #E6C27A !important;
+    }
+    h1, h2, h3, h4, p, li, span, a, blockquote {
+        color: #E6C27A !important;
+    }
+    .connect-link {
+        background-color: #D4AF37 !important;
+        color: #360D12 !important;
+        border-color: #D4AF37 !important;
+    }
+</style>
     --border-delicate: rgba(176, 141, 87, 0.35);
 }
 
