@@ -4,25 +4,32 @@
 :root {
     <style>
     :root {
-        --bg-parchment: #4A151B !important;
-        --bg-card: #5C1B23 !important;
-        --ink-primary: #E6C27A !important;
-        --ink-secondary: #D4AF37 !important;
-        --accent-gold: #F0D38E !important;
-        --accent-burgundy: #E6C27A !important;
-        --border-delicate: rgba(212, 175, 55, 0.45) !important;
+        <style>
+    :root {
+        --bg-parchment: #5E2125 !important;   /* Warm Deep Autumn Maroon */
+        --bg-card: #70282D !important;        /* Soft Spiced Autumn Card Tone */
+        --ink-primary: #F7EFE5 !important;    /* Off-white body text */
+        --ink-secondary: #EAE0D5 !important;  /* Soft cream subtitles */
+        --accent-gold: #E6C27A !important;    /* Antique gold headings */
+        --accent-burgundy: #D4AF37 !important;
+        --border-delicate: rgba(230, 194, 122, 0.45) !important;
     }
     body {
-        background-color: #4A151B !important;
+        background-color: #5E2125 !important;
+        color: #F7EFE5 !important;
+    }
+    h1, h2, h3, h4, .section-title, .hero-title {
         color: #E6C27A !important;
     }
-    h1, h2, h3, h4, p, li, span, a, blockquote {
-        color: #E6C27A !important;
+    p, li, span, a, blockquote {
+        color: #F7EFE5 !important;
     }
     .connect-link {
         background-color: #D4AF37 !important;
-        color: #360D12 !important;
+        color: #3D1215 !important;
         border-color: #D4AF37 !important;
+    }
+</style>
     }
 </style>
     --border-delicate: rgba(176, 141, 87, 0.35);
