@@ -1,4 +1,3 @@
-
 /* 1. Intro Overlay: Rich Vintage Autumn Ochre-Bronze & Gold Frame */
 #intro-overlay.intro-overlay {
     background-color: #3F3224 !important;
@@ -49,54 +48,199 @@
     color: #2B2117 !important;
 }
 
-/* 2. Main Portfolio: Deep Autumn Maroon & Structured Compartments */
-/* Force Deep Autumn Maroon Background across all layers */
+/* 2. Main Portfolio Layout & Background */
 html, body, .main-container {
     background-color: #5E2125 !important;
-    background: #5E2125 !important;
     color: #F7EFE5 !important;
     font-family: 'Cormorant Garamond', serif !important;
     margin: 0;
     padding: 0;
 }
+
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-/* Distinct Card Compartments with Gold Borders */
+/* Hero Section & Centered Portrait Frame */
+.hero-section {
+    text-align: center;
+    padding: 40px 0 30px 0;
+    border-bottom: 1px solid rgba(230, 194, 122, 0.3);
+    margin-bottom: 40px;
+}
+
+.portrait-frame {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #E6C27A;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Headings: Antique Gold */
+h1, h2, h3, h4, .main-title, .resume-section h2 {
+    color: #E6C27A !important;
+    font-family: 'Cinzel Decorative', serif !important;
+    margin-top: 0;
+}
+
+.main-title {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.subtitle-roles {
+    color: #F0D38E !important;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.custom-greeting-box {
+    background: rgba(114, 43, 48, 0.6);
+    border: 1px solid rgba(230, 194, 122, 0.3);
+    padding: 25px;
+    border-radius: 6px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.greeting-speech {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 2rem;
+    color: #E6C27A !important;
+    margin-bottom: 10px;
+}
+
+/* Body Text: Off-White / Soft Cream */
+p, li, span, a, .section-intro, .exp-details, .intro-story {
+    color: #F7EFE5 !important;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+/* Table of Contents Navigation */
+.toc-nav {
+    background: #722B30;
+    border: 1px solid rgba(230, 194, 122, 0.4);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.toc-list a {
+    color: #E6C27A !important;
+    text-decoration: none;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.toc-list a:hover {
+    color: #F7EFE5 !important;
+    text-decoration: underline;
+}
+
+/* Content Sections & Compartments */
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.section-intro {
+    margin-bottom: 25px;
+    font-style: italic;
+    color: #EAE0D5 !important;
+}
+
+/* Distinct Card Compartments */
 .experience-card, .competency-box, .language-box, .connect-box, .art-placeholder, .timeline-item {
     background-color: #722B30 !important;
     border: 1px solid rgba(230, 194, 122, 0.45) !important;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.timeline-item h3 {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.timeline-date {
+    display: inline-block;
+    background: #E6C27A;
+    color: #5E2125 !important;
+    padding: 2px 10px;
     border-radius: 4px;
-    padding: 25px;
-    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    font-family: sans-serif;
 }
 
-/* Antique Gold Headings */
-h1, h2, h3, h4, .main-title, .resume-section h2 {
-    color: #E6C27A !important;
-    font-family: 'Cinzel Decorative', serif !important;
+/* Skills Grid */
+.skills-languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
 }
 
-/* Off-White Body Text */
-p, li, span, a, .section-intro, .exp-details, .subtitle-roles {
-    color: #F7EFE5 !important;
+@media (max-width: 768px) {
+    .skills-languages-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-.subtitle-roles {
-    color: #EAE0D5 !important;
-    letter-spacing: 1px;
+.styled-list {
+    padding-left: 20px;
+    margin: 15px 0 0 0;
+}
+
+.styled-list li {
+    margin-bottom: 10px;
 }
 
 /* Action Buttons */
+.connect-box {
+    text-align: center;
+}
+
 .connect-link {
     background-color: #D4AF37 !important;
     color: #3D1215 !important;
     border: 1px solid #D4AF37 !important;
     font-family: 'Cinzel Decorative', serif !important;
     font-weight: 700;
-    padding: 10px 24px;
+    padding: 12px 30px;
     display: inline-block;
     text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
     transition: all 0.3s ease;
 }
 
@@ -104,7 +248,17 @@ p, li, span, a, .section-intro, .exp-details, .subtitle-roles {
     background-color: #F0D38E !important;
 }
 
-/* Utility to hide/reveal main container */
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid rgba(230, 194, 122, 0.3);
+    margin-top: 50px;
+    color: #E6C27A !important;
+    font-family: 'Cinzel Decorative', serif;
+    letter-spacing: 2px;
+}
+
 .hidden {
     display: none !important;
 }
