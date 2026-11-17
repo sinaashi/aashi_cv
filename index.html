@@ -3,46 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aashi Sinha — Portfolio</title>
+    <title>Aashi Sinha - Portfolio</title>
     <!-- Google Fonts for Victorian/French Elegance & Cursive Script -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2"><style>
-    body {
-        background-color: #4A151B !important;
-        color: #F7EFE5 !important;
-    }
-</style>
-    <style>
-    :root {
-        --bg-parchment: #5E2125 !important;
-        --bg-card: #722B30 !important;             /* Distinct lighter maroon cards */
-        --ink-primary: #F7EFE5 !important;        /* Off-white body text */
-        --ink-secondary: #EAE0D5 !important;      /* Soft cream subtitles */
-        --accent-gold: #E6C27A !important;        /* Antique gold headings */
-        --accent-burgundy: #D4AF37 !important;
-        --border-delicate: rgba(230, 194, 122, 0.45) !important;
-    }
-    body {
-        background-color: #5E2125 !important;
-        color: #F7EFE5 !important;
-    }
-    /* Bring back structured cards and compartment styling */
-    .card, .section-container, .content-box, div[class*="card"] {
-        background-color: #722B30 !important;
-        border: 1px solid rgba(230, 194, 122, 0.35) !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
-    }
-    h1, h2, h3, h4, .section-title, .hero-title {
-        color: #E6C27A !important;
-    }
-    p, li, span, a, blockquote {
-        color: #F7EFE5 !important;
-    }
-    .connect-link {
-        background-color: #D4AF37 !important;
-        color: #3D1215 !important;
-        border-color: #D4AF37 !important;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -56,153 +20,111 @@
 
     <!-- Main Website Container -->
     <div id="main-container" class="main-container hidden">
-        
+
         <!-- Header / Hero Section -->
         <header class="hero-section">
-            <div class="portrait-frame">
-                <!-- Replace 'your-photo.jpg' with your actual photo filename or URL -->
-                <img src=" WhatsApp Image 2026-11-17 at 15.53.11.jpeg" alt="Aashi Sinha Portrait" class="portrait-img">
-            </div>
-            <h1 class="main-title">Aashi Sinha</h1>
-            <p class="subtitle-roles">
-                Fashion Designer &bull; Space Designer &bull; Business Analyst &bull; Digital Marketing
-            </p>
-            
-            <!-- Custom Greeting & Short Intro -->
-            <div class="custom-greeting-box">
-                <p class="greeting-speech">"Hello, come on, grab a chair."</p>
-                <p class="intro-story">
-                 My name is Aashi Sinha, and I spend my days (and most of my nights) overthinking big ideas, building things from scratch, and figuring it all out as I go.
-                </p>
-            </div>
+            <h1>Aashi Sinha</h1>
+            <p class="hero-subtitle">Fashion Designer • Space Designer • Business Analyst • Digital Marketing</p>
+            <blockquote class="hero-quote">"Hello, come on, grab a chair."</blockquote>
+            <p class="hero-bio">My name is Aashi Sinha, and I spend my days (and most of my nights) overthinking big ideas, building things from scratch, and figuring it all out as I go.</p>
         </header>
 
-        <!-- Navigation Table of Contents -->
-        <nav class="toc-nav">
-            <ul class="toc-list">
-                <li><a href="#about-education">I. Education</a></li>
-                <li><a href="#work-experience">II. Work Experience</a></li>
-                <li><a href="#art-portfolio">III. Art & Creations</a></li>
-                <li><a href="#skills-languages">IV. Skills & Languages</a></li>
-                <li><a href="#connect">V. Connect</a></li>
+        <!-- Table of Contents -->
+        <nav class="table-of-contents">
+            <ul>
+                <li><a href="#about">1. About & Education</a></li>
+                <li><a href="#experience">2. Work Experience</a></li>
+                <li><a href="#creations">3. Art & Creations</a></li>
+                <li><a href="#skills">4. Skills & Languages</a></li>
+                <li><a href="#connect">5. Connect</a></li>
             </ul>
         </nav>
 
-        <!-- Content Sections -->
-        <main class="content-body">
+        <!-- Section I: About & Education -->
+        <section id="about" class="portfolio-section">
+            <h2>1. About & Education</h2>
+            <p class="section-desc">A chronicle of academic pursuits and foundational milestones blending design artistry with strategic business acumen.</p>
             
-            <!-- Section I: About & Education -->
-            <section id="education" class="resume-section">
-                <h2>I. About & Education</h2>
-                <p class="section-intro">A chronicle of academic pursuits and foundational milestones blending design artistry with strategic business acumen.</p>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="timeline-date">2023</span>
-                        <h3>Chaitram School North Campus,Indore</h3>
-                        <p>Graduated Class 10th</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">2025</span>
-                        <h3>Shanti Asiatic School,Ahmedabad</h3>
-                        <p>Graduated Class 12th</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">2025 – 2026</span>
-                        <h3>ANANT National University</h3>
-                        <p>Completed Foundation Year</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">Present</span>
-                        <h3>IIM Bangalore</h3>
-                        <p>Pursuing BBA in Digital Business & Entrepreneurship</p>
-                    </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-year">2023</span>
+                    <h3>Chaitram School North Campus, Indore</h3>
+                    <p>Graduated Class 10th</p>
                 </div>
-            </section>
-
-            <!-- Section II: Work Experience -->
-            <section id="work-experience" class="resume-section">
-                <h2>II. Work Experience</h2>
-                <p class="section-intro"> —a glimpse into the work I love doing.</p>
-                <div class="experience-card">
-                    <h3>Multidisciplinary Practitioner</h3>
-                    <p class="exp-details">Applying rigorous business analytics and digital marketing strategies to creative ventures in fashion and space design. Bridging the gap between conceptual artistry and structured commercial execution.</p>
+                <div class="timeline-item">
+                    <span class="timeline-year">2025</span>
+                    <h3>Shanti Asiatic School, Ahmedabad</h3>
+                    <p>Graduated Class 12th</p>
                 </div>
-            </section>
-
-            <!-- Section III: Art -->
-            <section id="art-portfolio" class="resume-section">
-                <h2>III. Art & Creative Explorations</h2>
-                <p class="section-intro">Visual expressions, sketches, and conceptual design studies reflecting a classical French sensibility infused with contemporary perspective.</p>
-                <div class="art-grid">
-                    <div class="art-placeholder">Desgin Concept Studies</div>
-                    <div class="art-placeholder">Digital Brand Aesthetics</div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2025 – 2026</span>
+                    <h3>ANANT National University</h3>
+                    <p>Completed Foundation Year</p>
                 </div>
-            </section>
-
-            <!-- Section IV: Skills & Languages -->
-            <section id="skills-languages" class="resume-section">
-                <h2>IV. Skills & Languages</h2>
-                <p class="section-intro">A curated repertoire of creative design disciplines, analytical frameworks, and global communication.</p>
-                
-                <div class="skills-languages-grid">
-                    <!-- Core Competencies -->
-                    <div class="competency-box">
-                        <h3>Disciplines & Capabilities</h3>
-                        <ul class="styled-list">
-                            <li><strong>Design & Aesthetics:</strong> Fashion Illustration, Concept Development, Spatial & Interior Planning, Visual Storytelling</li>
-                            <li><strong>Business & Strategy:</strong> Business Analytics, Digital Entrepreneurship, Market Research, Brand Positioning</li>
-                            <li><strong>Digital & Creative Tech:</strong> Digital Marketing Strategy, Content Curation, Web Design Fundamentals (HTML/CSS)</li>
-                        </ul>
-                    </div>
-
-                    <!-- Language Proficiency -->
-                    <div class="language-box">
-                        <h3>Linguistic Proficiency</h3>
-                        <ul class="styled-list">
-                            <li><strong>English:</strong> Fluent</li>
-                            <li><strong>Hindi:</strong> Fluent</li>
-                            <li><strong>Gujarati:</strong> Conversational</li>
-                            <li><strong>Japanese:</strong> Basic Conversational</li>
-                            <li><strong>Spanish:</strong> Elementary (Currently Learning)</li>
-                        </ul>
-                    </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">Present</span>
+                    <h3>IIM Bangalore</h3>
+                    <p>Pursuing BBA in Digital Business & Entrepreneurship</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Section V: Connect -->
-            <section id="connect" class="resume-section">
-                <h2>V. Connect</h2>
-                <p class="section-intro">Inquiries, collaborations, and professional correspondences are graciously welcomed.</p>
-                <div class="connect-box">
-                    <p>Get in touch via email or professional networks to discuss design and business ventures.</p>
-                    <a href="worksinaashi@gmail.com" class="connect-link">Send a Message</a>
+        <!-- Section II: Work Experience -->
+        <section id="experience" class="portfolio-section">
+            <h2>2. Work Experience</h2>
+            <p class="section-desc">A log of professional engagements and hands-on operational practice.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Professional Milestones</h3>
+                    <p>Details regarding internships, projects, and business initiatives will appear here.</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        </main>
+        <!-- Section III: Art & Creations -->
+        <section id="creations" class="portfolio-section">
+            <h2>3. Art & Creations</h2>
+            <p class="section-desc">A visual gallery showcasing design works, physical builds, and creative expressions.</p>
+            <div class="card-container">
+                <div class="card">
+                    <p>Gallery archives coming soon.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section IV: Skills & Languages -->
+        <section id="skills" class="portfolio-section">
+            <h2>4. Skills & Languages</h2>
+            <p class="section-desc">A inventory of core competencies, software proficiencies, and linguistic capabilities.</p>
+            <div class="skills-grid">
+                <div class="card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English (Fluent)</li>
+                        <li>Hindi (Fluent)</li>
+                        <li>Gujarati (Conversational)</li>
+                        <li>Japanese (Basic Conversational)</li>
+                        <li>Spanish (Learning)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section V: Connect -->
+        <section id="connect" class="portfolio-section">
+            <h2>5. Connect</h2>
+            <p class="section-desc">Open channels for professional inquiries, collaborations, and dialogue.</p>
+            <div class="connect-links">
+                <a href="mailto:your.email@example.com" class="connect-link">Email Me</a>
+            </div>
+        </section>
 
         <!-- Footer -->
-        <footer class="site-footer">
-            <p>&copy; 2026 Aashi Sinha.</p>
+        <footer class="portfolio-footer">
+            <p>Aashi Sinha 2026</p>
         </footer>
 
     </div>
 
-    <!-- JavaScript to handle the interactive invitation overlay -->
-    <script>
-        const revealBtn = document.getElementById('reveal-btn');
-        const introOverlay = document.getElementById('intro-overlay');
-        const mainContainer = document.getElementById('main-container');
-
-        revealBtn.addEventListener('click', () => {
-            introOverlay.style.opacity = '0';
-            setTimeout(() => {
-                introOverlay.style.display = 'none';
-                mainContainer.classList.remove('hidden');
-                mainContainer.style.opacity = '1';
-            }, 800);
-        });
-    </script>
 </body>
 </html>
